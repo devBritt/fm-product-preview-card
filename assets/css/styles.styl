@@ -52,6 +52,14 @@ body
   width 100%
   text-align center
   vertical-align middle
+  font-family "Monsterrat", sans-serif
+  font-size 11px
+  color very-dark-cyan
+  &>a
+    text-decoration none
+    color dark-cyan
+    &:hover
+      color hsl(158, 42%, 18%)
 
 // card styles
 .card
@@ -74,16 +82,44 @@ body
 .card-details
   padding 24px
 
+.overline
+.product-desc
+.og-price
+  font-family "Monsterrat", sans-serif
+  color gray-blue
+
+.overline
+  text-transform uppercase
+  letter-spacing 5px
+  line-height 15px
+
 .product-name
   margin-top 12px
   margin-bottom 16px
+  font-family "Fraunces", serif
+  font-size xl-text
+  font-weight 700
+  line-height 32px
+  color very-dark-cyan
+
+.product-desc
+  line-height 23px
 
 .product-price
   display flex
+  align-items center
   margin-top 24px
   margin-bottom 20px
   &>.sale-price
     margin-right 20px
+
+.sale-price
+  font-family "Fraunces", serif
+  color dark-cyan
+  font-size xl-text
+
+.og-price
+  text-decoration line-through
 
 button
   width 100%
@@ -91,15 +127,24 @@ button
   border-radius 8px
   padding-top 15px
   padding-bottom 15px
-  &>img
-    margin-right 12px
-    vertical-align middle
+  background-color dark-cyan
+  color white
+  font-family "Monsterrat", sans-serif
+  font-weight 700
+  font-size md-text
+  line-height 23px
+  &:hover
+    background-color hsl(158, 42%, 18%)
+
+.btn-icon
+  margin-right 12px
+  vertical-align middle
 
 // MEDIA QUERIES
 // tablet or larger
 @media screen and (min-width: 768px)
   .card
-    width 600px
+    width 625px
     display flex
 
   .card-img
