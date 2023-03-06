@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  max-width: 100%;
+}
+button {
+  font: inherit;
+}
+p,
+h2 {
+  overflow-wrap: break-word;
+}
